@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Interview Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+        }
+        .chatbot {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+        }
+        .chatbot img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .chatbot h3 {
+            margin-top: 0;
+        }
+        .chatbox {
+            margin-top: 10px;
+            height: 200px;
+            border: 2px solid #ccc;
+            background-color: #e0f7fa; /* Light blue background */
+            overflow-y: auto;
+            padding: 10px;
+        }
+        .question-form {
+            display: flex;
+            margin-top: 10px;
+        }
+        .question-form input {
+            width: 80%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+        }
+        .question-form button {
+            width: 20%;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Tamara Chatbot -->
+        <div class="chatbot" id="tamaraChatbot">
+            <img src="path_to_tamara_image.jpg" alt="Tamara">
+            <h3>Tamara, 39</h3>
+            <div class="chatbox" id="tamaraChatbox"></div>
+            <form class="question-form" onsubmit="handleChat(event, 'tamara')">
+                <input type="text" id="tamaraQuestion" placeholder="Ask a question">
+                <button type="submit">Ask</button>
+            </form>
+        </div>
+        <!-- Maria Chatbot -->
+        <div class="chatbot" id="mariaChatbot">
+            <img src="path_to_maria_image.jpg" alt="Maria">
+            <h3>Maria, 8</h3>
+            <div class="chatbox" id="mariaChatbox"></div>
+            <form class="question-form" onsubmit="handleChat(event, 'maria')">
+                <input type="text" id="mariaQuestion" placeholder="Ask a question">
+                <button type="submit">Ask</button>
+            </form>
+        </div>
+        <!-- John Chatbot -->
+        <div class="chatbot" id="johnChatbot">
+            <img src="path_to_john_image.jpg" alt="John">
+            <h3>John, 64</h3>
+            <div class="chatbox" id="johnChatbox"></div>
+            <form class="question-form" onsubmit="handleChat(event, 'john')">
+                <input type="text" id="johnQuestion" placeholder="Ask a question">
+                <button type="submit">Ask</button>
+            </form>
+        </div>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>
