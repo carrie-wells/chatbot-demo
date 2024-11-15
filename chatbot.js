@@ -20,9 +20,6 @@ function handleChat(event, chatbotId) {
 }
 
 function generateResponse(chatbotId, question) {
-    // This is a placeholder for where you would integrate ChatGPT.
-    // In practice, you would use an API call to get the response.
-    // For this self-contained example, let's use some dummy responses:
     const responses = {
         tamara: "Tamara says: I'm not feeling very good today.",
         maria: "Maria says: I'm a bit scared.",
